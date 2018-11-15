@@ -1,46 +1,55 @@
-Ä³»Ê¼ÒÆøÏóÑ§ÔºÐ£Ô°wifiÒ»¼üµÇÂ¼¹¤¾ß
-======================
-ÐÐÐÐÐÐÎÒÖªµÀÎÒÀ¬»ø£¬¸ù±¾Ã»ÈËÐèÒªÕâ¶«Î÷orz
+> # æŸçš‡å®¶æ°”è±¡å­¦é™¢æ ¡å›­wifiä¸€é”®ç™»å½•
+---
+> ## Info
+* python2.7
+    * requests
+    * json
+    * base64
+    * time
+    * os
+* VScode
+  
 
-*µ«ÊÇÄó¡¤¡¤¡¤¡¤
-Õâ¶«Î÷µÄ¼¼Êõ»¹¿ÉÒÔ¸É±ðµÄ²»ÊÇ2333
-<(*£þ¨Œ£þ*)/*
+> ## Version
+* æ›´æ–°:2018.11.16
+* Version: 1.0
 
-Info
-----
->* °á×©ÈË cc
-* gitbub´«ËÍÃÅ<https://github.com/needhourger/-wifi->
-* Version 1.0.0
-* IDE Sublime Text 3/python 2.7
+* æ›´æ–°å†…å®¹:
+    * åŒºåˆ†äº†linuxç‰ˆæœ¬,å’Œwinç‰ˆæœ¬
+    * winç‰ˆæœ¬ä¸‹åŠ ä¸Šäº†æ£€æŸ¥wifié“¾æŽ¥æƒ…å†µ
+    * ä¿®å¤äº†linuxä¸‹è„šæœ¬è·¯å¾„çš„é—®é¢˜
+    * ä¿®æ”¹äº†ä¸€ä¸‹ä¸‹ç•Œé¢
+*  **linuxä¸‹æ²¡æœ‰è‡ªåŠ¨è¿žæŽ¥wifiåŠŸèƒ½,ä»…å®žçŽ°äº†webè®¤è¯(åŽŸå› æ˜¯æ²¡æœ‰æ‰¾çš„åˆé€‚çš„åº“åˆæ‡’å¾—é€ è½®å­)**
 
-Ò»¸ö»ùÓÚpython request¿âµÄÒ»¸öÐ¡¶«Î÷emmm
+> ## Usage
+* Windows
+    * å·²æ‰“åŒ…ç”Ÿæˆäº†exeæ–‡ä»¶
+    * ç›´æŽ¥åŒå‡»è¿è¡Œ,ç¬¬ä¸€æ¬¡ä¼šè¦è¾“å…¥webè®¤è¯ä¿¡æ¯,ä¹‹åŽä¿¡æ¯ä¼šè¢«ä¿å­˜
+    * ä»¥åŽä½¿ç”¨åªéœ€è¦åŒå‡»exeå³å¯
+    * PSæ— éœ€ä¿è¯wifiæ˜¯å¦å·²ç»è¿žæŽ¥ä¸Š,ç¨‹åºè‡ªèº«ä¼šæ£€æŸ¥wifiè¿žæŽ¥
+    * ä½†æ˜¯è¯·ç¡®ä¿æ‚¨ä¸æ˜¯ç¬¬ä¸€æ¬¡è¿žæŽ¥i-NUIST
 
-Log
-----
-> 2017.??? Version 1.0.0
-~~ºÃÁË Ã»ÓÐ°æ±¾Ï¸½ÚÁË£¬±ð¿´ÁË¡£¡£¡£~~
+* linux
+    * åœ¨sample.pyç›®å½•ä¸‹è¿è¡Œè¯¥è„šæœ¬
+         ```
+         python sample.py
+        ```
+        sample.pyå¯ä»¥æ˜¯ä½ ä¿®æ”¹çš„è¯¥è„šæœ¬çš„åå­—
+    * ä½¿ç”¨aliaså‘½ä»¤
+        
+        * ç¼–è¾‘rootç›®å½•ä¸‹çš„.bashrcæ–‡ä»¶,æ·»åŠ (sample.pyæ˜¯è¯¥è„šæœ¬åå­—)
+        ```
+        alias   inuist="python /root/sample.py"
+        ```
+        
+        * ä¿å­˜é€€å‡ºåŽè¿è¡Œ
+        ```
+        source .bashrc
+        ```
 
->´ó¸Å²»»áÔÙÓÐºóÐø¸üÐÂÁË°É¡¤¡¤¡¤¡¤
+        * æŽ¥ä¸‹æ¥åªè¦åœ¨å‘½ä»¤è¡Œè¿è¡Œ,å³å¯è¿žæŽ¥wifiä¸€é”®è®¤è¯
+        ```
+        inuist
+        ```
 
->£¨±Ï¾¹Õâ~~À¬»øÑ§Ôº~~Ñ§Ð£µÄÏµÍ³Ç§Äê²»¸üÐÂ¡¤¡¤¡¤¡¤£©
-
-
-Detail
--------
->1.Ê×ÏÈÀûÓÃbrupsuiteÈí¼þ×¥°ü·ÖÎöÒ»ÁËÒ»ÏÂÇëÇó½á¹¹¡£
->2.ÀûÓÃpythonÄÇ~~ÕæÕý¸øÈËÊ¹ÓÃµÄ~~Ç¿´óµÄrequests¿âÄ£ÄâÒ»¸öÇëÇó²¢Ìá½»²¢µÃµ½·þÎñÆ÷µÄÓ¦´ðÏûÏ¢
->3.ÀûÓÃÒ»¸ö½«python³ÌÐò×ª»»³ÉexeÎÄ¼þµÄÐ¡¹¤¾ß±£Ö¤Ò»¶¨µÄÒÆÖ²ÐÔ
-
-How to use
-------------
-~~´ó¸Å£¬Ò²Ðí¡£¡£¡£ÎÒÎªÉ¶ÒªÐ´Õâ²¿·Ö¡£¡£¡£¡£~~
-
->* µÚÒ»´ÎÔËÐÐµÄÊ±ºò»áÒªÇóÊ¹ÓÃÕßÊäÈëÄãµÄÐ£Ô°ÍøwifiÕËºÅ£¬ÔËÓªÉÌ£¬ÃÜÂë¡£°´ÕÕÌáÊ¾ÒªÇó×ö¼´¿É¡£ÊäÈëÍê³ÉÖ®ºó×Ô¶¯Á´½Ó
->* Ö®ºó¹¤¾ß»áÔÚ±¾µØÄ¿Â¼ÏÂÉú³ÉÒ»¸öjsonÎÄ¼þÓÃÀ´±£´æÊý¾Ý£¨Î´×öÌØ±ð¼ÓÃÜ´¦Àí£©ÏÂ´ÎÊ¹ÓÃÖ±½Óµã»÷Èí¼þ¼´¿É
-
-End
-----
-ºÃÁË ´ó¸Å¾Íµ½Õâ°É¡¤¡¤¡¤¡¤
-
-![](https://github.com/needhourger/-wifi-/blob/master/image.png)
-
+ ### **linuxä¸‹æ²¡æœ‰è‡ªåŠ¨è¿žæŽ¥wifiåŠŸèƒ½,ä»…å®žçŽ°äº†webè®¤è¯(åŽŸå› æ˜¯æ²¡æœ‰æ‰¾çš„åˆé€‚çš„åº“åˆæ‡’å¾—é€ è½®å­)**
