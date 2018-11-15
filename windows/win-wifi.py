@@ -8,8 +8,8 @@ import os
 url="http://a.nuist.edu.cn/index.php/index/login"
 global data
 
-def print_log():
-    os.system("clear")
+def print_logo():
+    os.system("cls")
     print"  ____  _               _     _          _  __ _ "
     print" / ___|| |_ _   _ _ __ (_) __| |_      _(_)/ _(_)"
     print" \___ \| __| | | | '_ \| |/ _` \ \ /\ / / | |_| |"

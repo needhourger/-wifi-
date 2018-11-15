@@ -11,7 +11,7 @@ global data
 
 file_path=os.path.dirname(os.path.abspath(__file__))
 
-def print_log():
+def print_logo():
     os.system("clear")
     print"  ____  _               _     _          _  __ _ "
     print" / ___|| |_ _   _ _ __ (_) __| |_      _(_)/ _(_)"
@@ -72,7 +72,7 @@ def web_authentication():
     #print(url)
     while True:
         try:
-            print_log()
+            print_logo()
             print("tring web authentication...")
             print("")
             r=requests.post(url,data=data)
@@ -86,7 +86,7 @@ def web_authentication():
 
 #name=""
 if  __name__== "__main__":
-    print_log()
+    print_logo()
     try:
         with open(file_path+"/config.json","r") as f:
             data=json.load(f)
@@ -94,7 +94,7 @@ if  __name__== "__main__":
     except:
         First_step()
     finally:
-        print_log()
+        print_logo()
         with open(file_path+"/config.json","r") as f:
             data=json.load(f)
             f.close()

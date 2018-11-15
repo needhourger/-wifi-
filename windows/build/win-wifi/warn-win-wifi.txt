@@ -15,16 +15,16 @@ IMPORTANT: Do NOT post this list to the issue-tracker. Use it as a basis for
            yourself tracking down the missing module. Thanks!
 
 missing module named org - imported by copy (optional)
-missing module named fcntl - imported by tempfile (optional), subprocess (conditional)
 missing module named readline - imported by cmd (delayed, conditional, optional), pdb (delayed, optional)
-missing module named pwd - imported by posixpath (delayed, conditional), getpass (delayed), shutil (optional), tarfile (optional), netrc (conditional)
 missing module named 'org.python' - imported by pickle (optional), xml.sax (delayed, conditional)
+missing module named fcntl - imported by tempfile (optional), subprocess (conditional)
 missing module named riscosenviron - imported by os (conditional, optional)
 missing module named riscospath - imported by os (conditional)
 missing module named riscos - imported by os (conditional, optional)
 missing module named ce - imported by os (conditional, optional)
 missing module named _emx_link - imported by os (conditional)
 missing module named os2 - imported by os (conditional, optional)
+missing module named pwd - imported by posixpath (delayed, conditional), getpass (delayed), shutil (optional), tarfile (optional), netrc (conditional)
 missing module named posix - imported by os (conditional, optional)
 missing module named resource - imported by posix (top-level)
 missing module named 'collections.abc' - imported by urllib3._collections (optional), requests.compat (conditional)
