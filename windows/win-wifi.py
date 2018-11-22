@@ -3,6 +3,7 @@ import requests
 import base64
 import json
 import os
+import time
 
 #目标网址
 url="http://a.nuist.edu.cn/index.php/index/login"
@@ -129,17 +130,30 @@ if __name__=="__main__":
     print_logo()
     if not(check_wifi()):
         connect_nuist()
+        print u"wait for ready..."
+        time.sleep(2)
     
-    print_logo()    
-    try:
-        with open("./config.json",'r') as f:
+    print_logo()
+    if os.path.exists("./config.json"):
+        with open("./config.json","r") as f:
             data=json.load(f)
+            web_authentication()
             f.close()
-    except:
+    else:
         First_step()
-    finally:
-        print_logo()
         with open("./config.json",'r') as f:
             data=json.load(f)
             web_authentication()
             f.close()
+#    try:
+#        with open("./config.json",'r') as f:
+#            data=json.load(f)
+#            f.close()
+#    except IOError:
+#        First_step()
+#    finally:
+#        print_logo()
+#        with open("./config.json",'r') as f:
+#            data=json.load(f)
+#            web_authentication()
+#            f.close()
