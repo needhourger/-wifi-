@@ -1,16 +1,17 @@
 > # 某皇家气象学院校园wifi一键登录
 ---
 > ## Info
-* python2.7
-    * requests
-    * json
-    * base64
-    * time
-    * os
-* VScode
+* python3
   
 
 > ## Version
+
+>2.0
+* 更新：2020.5.11
+* 更新内容：
+    * 全部升级到python3版本
+    * 移除win下自动连接wifi功能
+    * win下新增图形化界面版本
 
 >1.0.1
 * 更新：2018.11.22
